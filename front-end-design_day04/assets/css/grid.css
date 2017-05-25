@@ -1,0 +1,43 @@
+/* grid.css @ 2017, hahayuni.net */
+/* 가이드라인 화면에 그릴 것! */
+body {
+	margin: 0;
+	height: 200vh;
+	padding-top: 42px;
+	/* 가이드라인 설계 */
+	background: url
+		("../assets/leading-pattern-21.png")
+	/* 글꼴, 글자 크기, 글자색상, 자간, 어간, 행간*/
+	font-family: "Spoqa Han Sans", "Dotum", sans-serif;
+	font-size: 87.5%; /* 포토샵 설정 값 기준 : 14px < % 단위 계산법 : 14/16(폰트 크기의 표준이 16px이기 때문에 16으로 나눈다.) */
+	color: #666;
+	letter-spacing: 0.025em; /* 포토샵 설정 값 기준 : -25 < em 단위 계산법 :-25/1000=0.025 */
+	line-height: 1.5;
+	/* 속기형 속성 : 글꼴, 글자 크기, 글자 두께, 글자 기울기, 글자 변형, 행간*/
+	/* font: 글자크기 글꼴; (필수!!!) */
+	/* font: 14px "Spoqa Han Sans", "Dotum", sans-serif; */
+	/* font: 글자크기/행간 글꼴; (옵션) */
+	font: 14px/1.5 "Spoqa Han Sans", "Dotum", sans-serif;
+	/* font: 두께 기울기 변형 글자크기/행간 글꼴; (옵션) */
+	/* small-caps는 작은 글자를 말하며 잘 사용하진 않는다. */
+	/* font: normal normal small-caps 14px/1.5 "Spoqa Han Sans", "Dotum", sans-serif; */
+
+}
+
+/* 본문 디자인 */
+p {
+	margin-top: 0;
+	margin-bottom: 21px; /* 1.5em */
+}
+
+/*컨테이너 디자인*/
+.container {
+	/* max-width는 최대 너비이며 이 이하로 창이 작아질 경우 width에 설정해 놓은 90%로 보여진다. (모바일 대응에 좋다.)*/
+	/* 너비 */
+	width: 90%;
+	/* 최대 너비 */
+	max-width: 1180px;
+	/* 가운데 배치(Layout) : 남은 공간을 양분 */
+	margin-left: auto;
+	margin-right: auto;
+}
