@@ -1,0 +1,136 @@
+html {
+	/* rem 단위의 기준 설정 값 */
+	/* 왜 10px로 설정하는가? 계산이 용이해지기 때문이다. */
+	font-size: 10px;
+	/* UI 화면 축(스크롤)이 움직이지 않도록 설정 */
+	overflow-y: scroll;
+}
+
+/* 가이드라인 화면에 보여준다. */
+body {
+	height: 100vh;
+	/* 본문 디자인(공통 속성 상속) */
+	color: #666;
+	font-size: 400 87.5%/1.5;
+	letter-spacing: 0.025em;
+	font: 400 1.4rem/1.5 "Spoqa Han Sans", "Dotum", sans-serif;
+}
+
+body.grid {
+	margin: 0;
+	background: url("../assets/leading-pattern-21.png");
+}
+
+/* 단락 디자인 */
+p {
+	margin-top: 0;
+	margin-bottom: 2.1rem;
+}
+
+/* 제목 디자인 : modular scale = 1.24 */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+  	margin-bottom: 2.1rem;
+  	color: #333;
+}
+
+h2, h3, h4, h5 {
+	font-weight: 400;
+	line-height: 4.2rem;
+}
+
+h4, h5, h6 {
+	font-weight: 700;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 4.1042rem; /* 3.3098rem x 1.24 */
+	line-height: 6.3rem; /* 3 x (1.5/3.6349) */
+}
+
+h2 {
+	font-size: 3.3098rem; /* 2.6692rem x 1.24 */
+}
+
+h3 {
+	font-size: 2.6692rem; /* 2.1526rem x 1.24 */
+}
+
+h4{
+	font-size: 2.1526rem; /* 1.736rem x 1.24 */
+}
+
+h5 {
+	font-size: 1.736rem; /* 1.4rem x 1.24 */
+}
+
+h6 {
+	line-height: 2.1rem;
+	/* 본문 글자 크기 x 글자 크기 배율 */
+	/* 1.4rem * 1.24 * 1.24 * 1.24 * 1.24 * 1.24 * 1.24 * */
+	font-size: 1.4rem; /* 1.4rem=14px와 같다. */
+	/* 행간 = 디자인 상의 줄 개수 x (행간비율/글자크기비율) */
+	line-height: 2.1rem; /* 1칸 * (1.5/1.24); */
+	/* 아래쪽 마진 = 행간비율/글자크기비율 */
+}
+
+/* 양쪽 정렬 */
+.align-justify {
+	text-align: justify;
+}
+
+.container {
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.list.is-horizontal li {
+	/* li 요소를 수직에서 수평으로 나열되게한다. */
+	float:left;
+	margin-right: 3rem;
+}
+
+.list a {
+	/* li는 inline 요소이다. 링크를 넣어 사용 시 클릭하려면 텍스트를 꼭 클릭해야만 클릭할 수 있는 단점이 있다 그래서 inline요소를 "display:block;" css를 이용해 block 요소로 수정하여 클릭 영역을 늘려준다. 그로인해 사용자가 클릭하기가 편리해진다. */
+	display: block;
+}
+
+/* 상태 디자인(status Design)*/
+	/*
+	기본 상태(:link)
+	방문한 상태(:visited)
+	마우스 올라간 상태(:hover)
+	포커스 상태(:focus)
+	활성화 상태(:active)
+	*/
+.list a:link {
+	color: #45a9ef;
+	text-decoration: none;
+}
+
+.list a:visited {
+	color: #6932cf;
+}
+
+.list a:hover {
+	color: #33eefd;
+}
+
+.list a:focus {
+	/* 마우스를 사용하지 못하는 장애인을 위한 효과입니다.*/
+	outline: 3px solid #ff0;
+}
+
+.list a:active {
+	background: #ff0;
+	color: #000
+}
