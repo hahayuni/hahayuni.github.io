@@ -104,7 +104,7 @@
 	background: #000;
 	/*둥근(radius) 테두리*/
 	border-radius: 20px;
-	transform: all 600ms cubic-bezier(0, 0, 0, 1.13) 0.2s;
+	transition: background 600ms cubic-bezier(0, 0, 0, 1.13) 0.2s;
 }
 
 .banner-review-link:hover {
