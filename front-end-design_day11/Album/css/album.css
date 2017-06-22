@@ -1,0 +1,105 @@
+/*! album.css @ 2017, hahayuni.net*/
+
+/*
+transition은 A에서 B가 있으면 중간단계를 만드는 것이다.
+animation은 하나하나 여러개의 움직임을 이어서 움직임을 만드는 것이다.
+*/
+
+html {
+	background:#fff;
+}
+
+body {
+	margin:0;
+}
+
+.vignette {
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:radial-gradient(circle, #7b7b7b, #313131);
+}
+
+.album {
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:287px;
+	height:287px;
+	transform: translate(-50%, -50%)
+}
+
+.album-item {
+	position: absolute;
+}
+
+.album-item.cover {
+	z-index:100;
+	border-radius: 8px;
+	box-shadow:0 3px 6px rgba(0, 0, 0, 0.45);
+}
+
+.album-item.sleeve {
+	z-index:10;
+}
+
+/*
+* 앨범에 사용자가 마우스를 올린 상태(:hover)
+* 자바스크립트에서는 Mouse over 또는 Mouse Enter라고 한다.
+*/
+
+.album .album-item {
+	top:0;
+	right:0;
+	transition: all 1s ease-out;
+}
+
+.album:hover .album-item.sleeve {
+	top:-5px;
+	right:-25px;
+}
+
+.album:hover .album-item.disk {
+	top:-5px;
+	right:-80px;
+	transform: rotate(720deg)
+}
+
+/*앨범이 open 상태에서 마우스가 올라가면(:hover)*/
+.album.open:hover .album-item.disk {
+	animation:infinite-rotate-disk 10s infinite;
+}
+
+/*사용자 애니메이션을 정의*/
+/*키프레임을 등록해서 각 프레임마다 스타일을 설정*/
+@keyframes infinite-rotate-disk {
+	/*키 프레임*/
+	/*시작(from) - 끝(to)*/
+	from {
+		transition:torate(720deg)
+	}
+
+	to {
+		transition:torate(0deg)
+	}
+	/*시작(0%) - 끝(100%)*/
+/*
+	0% {
+		transition:torate(720deg)
+	}
+
+	25% {
+		transition:torate(720deg)
+	}
+
+	75% {
+		transition:torate(720deg)
+	}
+
+	100% {
+		transition:torate(0deg)
+	}
+*/
+}

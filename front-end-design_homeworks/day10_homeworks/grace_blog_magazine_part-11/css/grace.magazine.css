@@ -21,7 +21,7 @@
 	position: absolute;
 	top:50%;
 	left:50%;
-	margin-top: -107.5px;
+	margin-top: -200px;
 	margin-left: -290px;
 	margin-left: -290px;
 }
@@ -68,4 +68,15 @@
 	position:absolute;
 	bottom:79px;
 	left:337px;
+}
+
+.circle1 {
+	position:absolute;
+	bottom:79px;
+	left:337px;
+	background-color:#f2f3f5;
+	width:64px;
+	height:64px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
 }

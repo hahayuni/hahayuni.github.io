@@ -1,0 +1,44 @@
+/*! poster-wall-e.css @ 2017, hahayuni.net*/
+
+/*공통 사용되는 모듈은 맨 아래로 배치해야 적용된다.*/
+
+body {
+	margin: 0;
+	background: #333;
+}
+
+.poster.is-center-x {
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%)
+}
+
+.poster.is-center-y {
+	position:absolute;
+	left:50%;
+	transform:translateY(-50%)
+}
+
+.poster.is-center {
+	position:absolute;
+	top:50%;
+	left:50%;
+	/*변형(Transform)*/
+	/*박스 자신의 가로(x)/세로(y) 길이의 절반만큼 위치 이동*/
+	transform:translate(-50%, -50%)
+	/*transform:translateX(-50%, -50%) translateY(-50%, -50%)*/
+}
+
+.poster.wall-e {
+	width:1000px;
+	height:1000px;
+	/*멀티 배경 이미지를 배치(Layout)*/
+	background:
+	url(../images/soundtrack.png) no-repeat 166px 34px, url(../images/disney-pixar.png) no-repeat 361.6px 87px, url(../images/logo.png) no-repeat 107px 121px, url(../images/eve.png) no-repeat 570px 299px, url(../images/wall-e.png) no-repeat 263px 343px, url(../images/m-o.png) no-repeat 202px 698px, url(../images/music.png) no-repeat 150px 929px,
+	/*선형 그레디언트(linear-gradient)*/
+	linear-gradient(180deg, #000308 0%, #2b254e 100%);
+	/*배율(scale transform) 변형*/
+	/*position은 많이 사용하지 않는게 좋다. 속도가 느리다. 대신 transform을 사용해준다. 특히 모바일 환경에서는 position보다는 transform을 사용해야한다.*/
+	/*transform:translateX() translateY() scale() skew() rotate(); : 포토샵 또는 스케치 프로그램에 있는 기능들이다.*/
+	transform:scale(0.5) translateX(-100%) translateY(-10%);
+}
