@@ -64,13 +64,8 @@
 	font-weight: 300;
 }
 
-.next {
-	position:absolute;
-	bottom:79px;
-	left:337px;
-}
-
 .circle1 {
+	display:block;
 	position:absolute;
 	bottom:79px;
 	left:337px;
@@ -79,4 +74,13 @@
 	height:64px;
 	-webkit-border-radius:100px;
 	-moz-border-radius:100px;
+	text-align:center;
+}
+
+.arrow {
+	position:absolute;
+	top:22px;
+	left:14px;
+	width:31px;
+	height:20px;
 }
