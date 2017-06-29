@@ -1,0 +1,37 @@
+.box {
+	width: 200px;
+	height: 200px;
+	font: 700 1.45rem Verdana;
+	color: #fff;
+}
+
+.is-float {
+	float: left;
+	margin-right: 1rem;
+}
+
+.is-clear {
+	clear: both;
+}
+
+.is-central {
+	text-align: center;
+	line-height: 200px;
+}
+
+.primary {
+	background: #333;
+	height: 320px;
+}
+
+.secondary {
+	background: #434343;
+}
+
+.tertiary {
+	background: #666;
+}
+
+.quaternary {
+	background: #e6e6e6;
+}
