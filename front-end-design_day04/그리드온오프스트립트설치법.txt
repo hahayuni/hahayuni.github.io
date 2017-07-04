@@ -1,9 +1,0 @@
-그리드 단축키 자바스크립트 파일 설치
-
-1. toggleGridLayers 파일을 C:\Program Files\Adobe\Adobe Photoshop CC 2017\Presets\Scripts 경로에 넣는다.
-
-2. 포토샵 프로그램을 껏다가 다시 시작한다.
-
-3. 파일 > 스크립트 > toggleGridLayers 클릭하면 그리드가 꺼졌다 켜졌다 한다.
-
-* 단축키를 설정해놓으면 편리하다. (포토샵에서 단축키 Alt + Shift + Ctrl + K 클릭 후 설정)
