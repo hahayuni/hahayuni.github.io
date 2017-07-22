@@ -1,0 +1,177 @@
+/*! rwd-grid.css @ 2017, yamoo9.net */
+
+/* GS 설계
+*
+* > flexbox
+* grid
+* > float
+*
+* container
+* row(cloumns)
+* col(cloumn)
+* is-{1,12}
+* is-offset-{1,11}
+*
+* Mobile First
+*
+* 500 (xs) m
+* 800 (m) t
+* 1200 (l) d
+*/
+
+/*모바일 페이지 작업시엔 마진을 주면 무너질 수 있기때문에 보통 패딩값으로 준다.*/
+
+height: calc((100% - 20px) / 3 )
+
+html {
+	font-size:10px;
+	/*line-height:;*/
+}
+
+body, body *,
+body::before, body::after,
+body *::before, body::after * {
+	transition:all 0.4s ease-out;
+	box-sizing:border-box; /*boder까지 사용하겠다.*/
+}
+
+body {
+	margin:0;
+}
+
+.container {
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+.row::after, .clearfix::after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.column {
+		float:left;
+		width:100%;
+	}
+
+/*Mobile View : [12] 500 이하*/
+@media screen and (max-width:500px) {
+/*
+	body {
+		background:#4dc995;
+		font-size:1.4rem;
+	}
+	body::before {
+		content:'Mobile'
+	}
+*/
+
+	.is-hidden {display:none !important;}
+}
+
+.column.is-1 {width:calc(1/12 * 100vw);}
+.column.is-2 {width:calc(2/12 * 100vw);}
+.column.is-3 {width:calc(3/12 * 100vw);}
+.column.is-4 {width:calc(4/12 * 100vw);}
+.column.is-5 {width:calc(5/12 * 100vw);}
+.column.is-6 {width:calc(6/12 * 100vw);}
+.column.is-7 {width:calc(7/12 * 100vw);}
+.column.is-8 {width:calc(8/12 * 100vw);}
+.column.is-9 {width:calc(9/12 * 100vw);}
+.column.is-10 {width:calc(10/12 * 100vw);}
+.column.is-11 {width:calc(11/12 * 100vw);}
+.column.is-12 {width:calc(12/12 * 100vw);}
+
+.is-o-1 {margin-left:calc(1/12 * 100vw);}
+.is-o-2 {margin-left:calc(2/12 * 100vw);}
+.is-o-3 {margin-left:calc(3/12 * 100vw);}
+.is-o-4 {margin-left:calc(4/12 * 100vw);}
+.is-o-5 {margin-left:calc(5/12 * 100vw);}
+.is-o-6 {margin-left:calc(6/12 * 100vw);}
+.is-o-7 {margin-left:calc(7/12 * 100vw);}
+.is-o-8 {margin-left:calc(8/12 * 100vw);}
+.is-o-9 {margin-left:calc(9/12 * 100vw);}
+.is-o-10 {margin-left:calc(10/12 * 100vw);}
+.is-o-11 {margin-left:calc(11/12 * 100vw);}
+.is-o-12 {margin-left:calc(12/12 * 100vw);}
+
+/*Tablet View : [12] 800 이하*/
+@media screen and (min-width:501px) and (max-width:800px) {
+/*
+	body {
+		background:#fed761;
+		font-size:1.8rem;
+	}
+	body::before {
+		content:'Tablet'
+	}
+*/
+}
+
+.column.is-1 {width:calc(1/12 * 100vw);}
+.column.is-2 {width:calc(2/12 * 100vw);}
+.column.is-3 {width:calc(3/12 * 100vw);}
+.column.is-4 {width:calc(4/12 * 100vw);}
+.column.is-5 {width:calc(5/12 * 100vw);}
+.column.is-6 {width:calc(6/12 * 100vw);}
+.column.is-7 {width:calc(7/12 * 100vw);}
+.column.is-8 {width:calc(8/12 * 100vw);}
+.column.is-9 {width:calc(9/12 * 100vw);}
+.column.is-10 {width:calc(10/12 * 100vw);}
+.column.is-11 {width:calc(11/12 * 100vw);}
+.column.is-12 {width:calc(12/12 * 100vw);}
+
+.is-o-t-1 {margin-left:calc(1/12 * 100vw);}
+.is-o-t-2 {margin-left:calc(2/12 * 100vw);}
+.is-o-t-3 {margin-left:calc(3/12 * 100vw);}
+.is-o-t-4 {margin-left:calc(4/12 * 100vw);}
+.is-o-t-5 {margin-left:calc(5/12 * 100vw);}
+.is-o-t-6 {margin-left:calc(6/12 * 100vw);}
+.is-o-t-7 {margin-left:calc(7/12 * 100vw);}
+.is-o-t-8 {margin-left:calc(8/12 * 100vw);}
+.is-o-t-9 {margin-left:calc(9/12 * 100vw);}
+.is-o-t-10 {margin-left:calc(10/12 * 100vw);}
+.is-o-t-11 {margin-left:calc(11/12 * 100vw);}
+.is-o-t-12 {margin-left:calc(12/12 * 100vw);}
+
+/*Desktop View : [12] 1200 이하*/
+@media screen and (min-width:801px) {
+/*
+	body {
+		background:#3273dc;
+		font-size:2.4rem;
+	}
+	body::before {
+		content:'Desktop'
+	}
+*/
+}
+
+.column.is-1 {width:calc(1/12 * 100vw);}
+.column.is-2 {width:calc(2/12 * 100vw);}
+.column.is-3 {width:calc(3/12 * 100vw);}
+.column.is-4 {width:calc(4/12 * 100vw);}
+.column.is-5 {width:calc(5/12 * 100vw);}
+.column.is-6 {width:calc(6/12 * 100vw);}
+.column.is-7 {width:calc(7/12 * 100vw);}
+.column.is-8 {width:calc(8/12 * 100vw);}
+.column.is-9 {width:calc(9/12 * 100vw);}
+.column.is-10 {width:calc(10/12 * 100vw);}
+.column.is-11 {width:calc(11/12 * 100vw);}
+.column.is-12 {width:calc(12/12 * 100vw);}
+
+.is-o-d-1 {margin-left:calc(1/12 * 100vw);}
+.is-o-d-2 {margin-left:calc(2/12 * 100vw);}
+.is-o-d-3 {margin-left:calc(3/12 * 100vw);}
+.is-o-d-4 {margin-left:calc(4/12 * 100vw);}
+.is-o-d-5 {margin-left:calc(5/12 * 100vw);}
+.is-o-d-6 {margin-left:calc(6/12 * 100vw);}
+.is-o-d-7 {margin-left:calc(7/12 * 100vw);}
+.is-o-d-8 {margin-left:calc(8/12 * 100vw);}
+.is-o-d-9 {margin-left:calc(9/12 * 100vw);}
+.is-o-d-10 {margin-left:calc(10/12 * 100vw);}
+.is-o-d-11 {margin-left:calc(11/12 * 100vw);}
+.is-o-d-12 {margin-left:calc(12/12 * 100vw);}
+

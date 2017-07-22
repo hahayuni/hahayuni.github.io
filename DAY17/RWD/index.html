@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Responsive Web Design Grid System</title>
+	<link rel="stylesheet" href="css/rwd-grid.css">
+</head>
+<body>
+
+	<div class="demo">
+		<!--콘텐츠 이미지, 비디오 예시-->
+		<figure class="hide img-wrapper">
+			<img
+			class="rwd-img"
+			src="https://unsplash.it/800/420/?image=10"
+			alt="숲 건너 저편의 푸른 바다"
+			width="800"
+			height="420">
+		</figure>
+
+		<figure class="hide video-wrapper">
+			<video
+			class="rwd-video"
+			loop="0"
+			autoplay
+			src="./media/holzweiler_new.mp4"
+			width="960"
+			height="540">
+			</video>
+		</figure>
+
+		<!--배경 이미지 예시-->
+		<figure class="hide rwd-bg green-leap"></figure>
+		<figure class="hide rwd-bg business"></figure>
+
+		<!--크롭 콘텐츠 이미지 예시-->
+		<header class="hide big-header">
+			<h1 class="big-header-title">A Cracker</h1>
+			<figure class="crop-img-wrapper">
+				<img
+				class="crop-img"
+				src="./images/matt-palmer.jpg"
+				alt="불꽃 남자"
+				width="1920"
+				height="1280">
+			</figure>
+		</header>
+
+		<!--크롭 배경 이미지 예시-->
+		<header class="hide big-header cracker">
+			<h1 class="big-header-title">A Cracker</h1>
+		</header>
+
+		<a href="https://fastcampus.co.kr/" class="hide scale-up">
+      		<div class="scale-wrap">
+      			<img
+      			class="sacle-img"
+      			src="./images/photo-matt.jpeg"
+      			alt=""
+      			width="140"
+      			height="200">
+      			<span class="scale-mask"></span>
+      		</div>
+      	</a>
+
+		<!--유연한 iframe(Youtube, Map)-->
+		<div class="media-zone">
+			<figure class="youtube is-4x3"><!--영상 비율 클래스를 미리 만들어주고 지정하면 편하다. (is-4x3 is-16x9 is-21x9)-->
+				<iframe
+				src="https://www.youtube.com/embed/XbGs_qK2PQA"
+				width="640"
+				height="360"
+				allowfullscreen></iframe>
+			</figure>
+			<figure class="map is-4x3">
+				<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6709702944568!2d127.01919691559903!3d37.51567777980739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e8f8dc430b%3A0xe9ac453bde55951d!2z7Yyo7Iqk7Yq47Lqg7Y287Iqk!5e0!3m2!1sko!2skr!4v1499951555837"
+				width="600"
+				height="450"
+				allowfullscreen>
+			</iframe>
+			</figure>
+		</div>
+	</div>
+
+</body>
+</html>
