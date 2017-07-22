@@ -44,7 +44,7 @@ body {
   float: left;
   width: 33.3333%;
   text-align: center;
-  background: #efefef;
+  background: #fff;
   border-right: 1px solid #dedfe5;
   border-bottom: 1px solid #dedfe5;
 }
@@ -54,9 +54,6 @@ body {
 .tablist-item:last-child {
   border-radius: 0 10px 0 0;
   border-right: 0;
-}
-.tablist-item.active {
-  background: #fff;
 }
 .tablist-item.active .tab {
   color: #12407e;
@@ -86,14 +83,6 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000;
-}
-
-.tabpanel {
-  display: none;
-}
-
-.tabpanel.active {
-  display: block;
 }
 
 .tab-component .tabpanel-list {
