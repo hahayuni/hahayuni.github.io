@@ -1,0 +1,86 @@
+/*! grace.magazine @ 2017, hahayuni.net */
+
+.magazine-ui {
+	width:580px;
+	height:450px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.montserrat {
+	font-family:'Montserrat', sans-serif;
+}
+
+.librebaskerville {
+	font-family:'Libre Baskerville', serif;
+}
+
+.is-cebterXY {
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -200px;
+	margin-left: -290px;
+	margin-left: -290px;
+}
+
+.home {
+	position:absolute;
+	top:17px;
+	left:20px;
+	font-size:12px;
+	color:#12407e;
+	font-weight:700;
+	letter-spacing:0.05em;
+}
+
+.chair {
+	position:absolute;
+	top:39px;
+	left:42px;
+	width:251px;
+	height:376pxl;
+}
+
+.title {
+	position:absolute;
+	top:94px;
+	left:336px;
+	font-size:28px;
+	line-height:1.36;
+	color:#000;
+	font-weight: 200;
+}
+
+.content {
+	position:absolute;
+	top:200px;
+	left:338px;
+	font-size:14px;
+	line-height:1.5;
+	color:#8c9199;
+	font-weight: 300;
+}
+
+.circle1 {
+	display:block;
+	position:absolute;
+	bottom:79px;
+	left:337px;
+	background-color:#f2f3f5;
+	width:64px;
+	height:64px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	text-align:center;
+}
+
+.arrow {
+	position:absolute;
+	top:22px;
+	left:14px;
+	width:31px;
+	height:20px;
+}
